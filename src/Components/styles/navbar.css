@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif; 
+    font-weight: 200; /* ✅ Applies lighter font weight everywhere */
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* ✅ Adds space between Hamburger and Admin Dashboard */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 10px; /* ✅ Adds extra spacing */
+}
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 36, 97);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navbar Title */
+.navbar-title {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 200; /* ✅ Lighter weight */
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-title:hover {
+    color: #0066cc;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Navbar Buttons - Lighter Font */
+.navbar-link,
+.logout-button {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 200; /* ✅ Applies same light weight */
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 2px solid transparent;
+}
+
+.navbar-link:hover,
+.logout-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #ffffff;
+}
+
+/* Logout Button */
+.logout-button {
+    background: red;
+}
+
+.logout-button:hover {
+    background: darkred;
+}
+

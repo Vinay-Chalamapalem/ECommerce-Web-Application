@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+}
+
+/* Product Page Container */
+.product-page-container {
+    padding: 32px;
+    margin-top: 80px;
+}
+
+/* Products Header */
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+/* Products Title */
+.products-title {
+    font-size: 24px;
+    color: #1f2937;
+    text-align: center;
+}
+
+/* Add Product Button */
+.add-product-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 18px;
+    border: none; /* ✅ Removed border */
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-product-button:hover {
+    background-color: #2980b9;
+}
+
+/* Edit Product Container */
+.edit-product-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Edit Product Form */
+.edit-product-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels & Input Fields */
+.edit-product-form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.edit-product-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s ease-in-out;
+}
+
+.edit-product-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Product Cards */
+.products-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 260px;
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-card img {
+    width: 250px;
+    height: 180px;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Card Buttons */
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* Edit Button */
+.card-buttons .edit {
+    background-color: #2ecc71;
+    color: white;
+    padding: 8px 16px;
+    border: none; /* ✅ Removed border */
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.card-buttons .edit:hover {
+    background-color: #27ae60;
+}
+
+/* Delete Button */
+.card-buttons .delete {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 16px;
+    border: none; /* ✅ Removed border */
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.card-buttons .delete:hover {
+    background-color: #c0392b;
+}
+
+/* Update and Cancel Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* Update Button */
+.button-group button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none; /* ✅ Removed border */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-group button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Cancel Button */
+.button-group button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none; /* ✅ Removed border */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-group button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+/* No Products Placeholder */
+.no-products {
+    text-align: center;
+    color: #9ca3af;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Success Message */
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}

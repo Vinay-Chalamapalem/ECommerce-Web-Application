@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif; /* ✅ Your chosen font applied everywhere */
+}
+
+/* Products Page Container */
+.products-container {
+    padding: 24px;
+    margin-top: 1px; /* ✅ Brings table closer to navbar */
+}
+
+/* Products Title */
+.products-title {
+    font-size: 24px;
+    color: #1f2937;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* Table Wrapper - Full Width */
+.table-wrapper {
+    width: 100%;
+    height: auto; /* ✅ Adjust height to fit content */
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -10px; /* ✅ Removes extra gap */
+    margin-bottom: 24px;
+}
+
+/* Products Table */
+.products-table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    table-layout: fixed; /* ✅ Ensures consistent column width */
+}
+
+/* Table Header & Cells - Fixed Row Height */
+.products-table th,
+.products-table td {
+    height: 40px; /* ✅ Fixed smaller height */
+    padding: 6px 12px; /* ✅ Less padding for compact sizing */
+    border: 1px solid #e5e7eb;
+    font-size: 15px;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap; /* ✅ Prevents text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* ✅ Adds "..." for overflowing text */
+}
+
+/* Ensure Columns Stay Even */
+.products-table tbody tr {
+    display: table-row; /* ✅ Prevents uneven row heights */
+}
+
+/* Row Hover Effect */
+.products-table tbody tr:hover {
+    background-color: #f9fafb;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Product Image */
+.product-image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* No Products Placeholder */
+.no-products {
+    text-align: center;
+    color: #9ca3af;
+    padding: 20px;
+    font-style: italic;
+}

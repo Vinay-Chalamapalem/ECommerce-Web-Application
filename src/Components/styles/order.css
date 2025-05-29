@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif; /* ✅ Your chosen font applied everywhere */
+}
+
+/* Orders Page Container */
+.orders-container {
+    padding: 32px; /* ✅ More padding for balanced spacing */
+    margin-top: 80px; /* ✅ Brings table closer to navbar */
+}
+
+/* Orders Title */
+.orders-title {
+    font-size: 24px;
+    color: #1f2937;
+    font-weight: bold;
+    margin-bottom: 24px; /* ✅ More space below title */
+    text-align: center;
+}
+
+/* Table Wrapper - Full Width */
+.table-wrapper {
+    width: 100%;
+    height: auto; /* ✅ Adjust height to fit content */
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -10px; /* ✅ Removes extra gap */
+    margin-bottom: 32px; /* ✅ More spacing below table */
+    padding: 12px; /* ✅ Adds internal padding */
+}
+
+/* Orders Table */
+.orders-table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    table-layout: fixed; /* ✅ Ensures consistent column width */
+}
+
+/* Table Header & Cells - Fixed Row Height */
+.orders-table th,
+.orders-table td {
+    height: 40px; /* ✅ Reduced height for cleaner layout */
+    padding: 10px 16px; /* ✅ Proper padding for readability */
+    border: 1px solid #e5e7eb;
+    font-size: 15px;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap; /* ✅ Prevents text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* ✅ Adds "..." for overflowing text */
+}
+
+/* Ensure Columns Stay Even */
+.orders-table tbody tr {
+    display: table-row; /* ✅ Prevents uneven row heights */
+}
+
+/* Row Hover Effect */
+.orders-table tbody tr:hover {
+    background-color: #f9fafb;
+    transition: background 0.3s ease-in-out;
+}
+
+/* No Orders Placeholder */
+.no-orders {
+    text-align: center;
+    color: #9ca3af;
+    padding: 20px;
+    font-style: italic;
+}

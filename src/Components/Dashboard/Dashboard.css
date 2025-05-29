@@ -1,0 +1,63 @@
+/* Dashboard Container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Product Grid - 4 Products Per Row */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* ✅ 4 products per row */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Product Card */
+.product-card {
+    display: flex; /* ✅ Ensures image and content align properly */
+    flex-direction: column; /* ✅ Stack image on top, text below */
+    justify-content: center; /* ✅ Centers image vertically */
+    align-items: center; /* ✅ Centers image horizontally */
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 250px; /* ✅ Limits image width */
+    height: 200px;
+    object-fit: contain; /* ✅ Ensures image fits without being cropped */
+    border-radius: 8px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Info */
+.product-info {
+    width: 85%;
+    padding-top: 20px;
+    text-align: center; /* ✅ Ensure text stays centered */
+}
+
+.product-info h3 {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.product-info p {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+}

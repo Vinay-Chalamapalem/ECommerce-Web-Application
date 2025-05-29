@@ -1,0 +1,93 @@
+/* Profile Container */
+.profile-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+  text-align: center;
+}
+
+/* Title */
+.profile-container h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  border: 3px solid #0066cc;
+}
+
+/* Profile Details */
+.profile-details p {
+  font-size: 16px;
+  color: #444;
+  margin: 10px 0;
+}
+
+/* Buttons */
+.edit-btn, .save-btn, .cancel-btn, .delete-btn, .logout-btn, .view-orders-btn {
+  padding: 10px 16px; /* 🔹 Slightly increased padding */
+  margin: 12px 6px;
+  font-size: 12px; /* 🔹 Slightly increased font size */
+  border: none;
+  border-radius: 8px; /* 🔹 More rounded for a sleek look */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* 🔹 Added soft shadow */
+}
+
+/* Button Colors */
+.edit-btn { background: #0066cc; color: white; }
+.view-orders-btn { background: #cc8b00; color: white; }
+.save-btn { background: #28a745; color: white; }
+.cancel-btn { background: #cd0e21; color: white; }
+.delete-btn { background: #cd0e21; color: white; }
+.logout-btn { background: #333; color: white; }
+
+/* Button Hover Effects */
+button:hover {
+  opacity: 0.85;
+  transform: scale(1.05); /* 🔹 Slight scale effect on hover */
+}
+
+/* Password Fields */
+/* Improved Input Spacing */
+.profile-container label {
+  display: block; /* ✅ Ensures labels are above inputs */
+  font-size: 16px;
+  color: #333;
+  margin-top: 12px; /* ✅ Added spacing between label & text box */
+  font-weight: bold;
+}
+
+/* Updated Input Fields */
+.profile-container input[type="text"],
+.profile-container input[type="email"],
+.profile-container input[type="password"] {
+  width: 100%;
+  padding: 12px; /* ✅ Increased padding inside input box */
+  margin-top: 6px; /* ✅ Added gap after labels */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fafafa; /* ✅ Slight background tint */
+}
+
+/* Ensure Consistent Button Spacing */
+.save-btn, .cancel-btn {
+  margin-top: 15px; /* ✅ Space between inputs & buttons */
+}
+
+body {
+  padding-top: 100px; /* ✅ Push content down */
+}

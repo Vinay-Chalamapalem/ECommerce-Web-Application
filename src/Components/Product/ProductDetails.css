@@ -1,0 +1,112 @@
+/* Product Details Layout */
+.product-details-containerr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Left-side Image */
+.product-imagee img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Right-side Info */
+.product-infoo {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.product-infoo h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.product-infoo p {
+    font-size: 18px;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Highlight Price */
+.product-infoo p strong {
+    color: #007bff;
+    font-size: 22px;
+    font-weight: bold;
+}
+/* Button Wrapper */
+.button-groupp {
+    display: flex;
+    justify-content: center; /* ✅ Center the buttons */
+    align-items: center;
+    gap: 15px; /* ✅ Adds space between buttons */
+}
+
+/* Buttons */
+.cart-btnn, .buy-btnn, .wishlist-btnn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Add to Cart */
+.cart-btnn {
+    background: #aa0808;
+    color: white;
+    margin-right: 15px;
+}
+
+.cart-btnn:hover {
+    background: #d40000;
+}
+
+/* Buy Now */
+.buy-btnn {
+    background: #0a9b2c;
+    color: white;
+}
+
+.buy-btnn:hover {
+    background: #00cb2c;
+}
+
+/* Wishlist Button */
+.wishlist-btnn {
+    width: 295px; /* ✅ Button stays at fixed 280px width */
+    text-align: center; /* ✅ Keeps text properly aligned */
+    display: flex;
+    justify-content: center; /* ✅ Centers content inside the button */
+    align-items: center;
+    background: #f8f9fa;
+    color: #000;
+    border: 2px solid #ec2c6c;
+    font-size: 15px;
+    padding: 12px 50px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 30px auto; /* ✅ Centers the button itself */
+}
+
+/* Keep hover effect */
+.wishlist-btnn:hover {
+    background: #f7286d;
+    color: white;
+}
+
+/* Wishlist Active State */
+.wishlist-btnn.active {
+    background: #de306a;
+    color: white;
+}

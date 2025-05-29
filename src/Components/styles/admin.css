@@ -1,0 +1,60 @@
+/* Users Container */
+.users-container {
+    padding: 24px;
+}
+
+/* Users Title */
+.users-title {
+    font-size: 28px;
+    color: #333; /* ✅ Matches header & navbar text color */
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center; /* ✅ Consistent centering */
+}
+
+/* Table Wrapper */
+.table-wrapper {
+    overflow-x: auto;
+    background: white; /* ✅ Matches header & navbar background */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* ✅ Consistent shadow */
+}
+
+/* Users Table */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Table Header */
+.users-table thead {
+    background-color: #f8f8f8; /* ✅ Matches menu background */
+    color: #333;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Table Cells */
+.users-table th,
+.users-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+/* Row Hover Effect */
+.users-table tbody tr:hover {
+    background-color: #f9fafb;
+    transition: background 0.3s ease-in-out;
+}
+
+/* No Users Placeholder */
+.no-users {
+    text-align: center;
+    color: #9ca3af;
+    padding: 20px;
+    font-style: italic;
+}
