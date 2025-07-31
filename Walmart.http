@@ -1,0 +1,6 @@
+@Walmart_HostAddress = http://localhost:5091
+
+GET {{Walmart_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
